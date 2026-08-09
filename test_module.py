@@ -112,10 +112,10 @@ class BoxPlotTestCase(unittest.TestCase):
         self.assertEqual(actual, expected, "Expected box plot 2 title to be 'Month-wise Box Plot (Seasonality)'")
 
     def test_box_plot_number_of_boxes(self):
-        actual = len(self.ax1.lines) / 6 # Every box has 6 lines
+        actual = len(self.ax1.lines) / 6 
         expected = 4
         self.assertEqual(actual, expected, "Expected four boxes in box plot 1")
-        actual = len(self.ax2.lines) / 6 # Every box has 6 lines
+        actual = len(self.ax2.lines) / 6 
         expected = 12
         self.assertEqual(actual, expected, "Expected 12 boxes in box plot 2")
 
