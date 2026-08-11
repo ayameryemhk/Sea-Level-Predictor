@@ -19,10 +19,10 @@ df.count = lambda numeric_only=True: _orig_count(numeric_only=numeric_only)['val
 
 
 def draw_line_plot():
-    # Make copy
+    
     df_line = df.copy()
 
-    # Create figure and axis
+    # Creating a figure and axis
     fig, ax = plt.subplots(figsize=(15, 5))
     ax.plot(df_line.index, df_line['value'], color='red', linewidth=1)
     
